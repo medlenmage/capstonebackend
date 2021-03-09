@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/joshua246/.local/share/virtualenvs/capstonebackend-WCabE0vc/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--django-settings-module=capstoneapi.settings",
+    ]
+}
