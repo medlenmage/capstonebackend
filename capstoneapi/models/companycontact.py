@@ -1,6 +1,6 @@
 from django.db import models
 
-class CompanyContact(models.model):
+class CompanyContact(models.Model):
 
     company_name = models.CharField(max_length=30)
     contact_name = models.CharField(max_length=30)

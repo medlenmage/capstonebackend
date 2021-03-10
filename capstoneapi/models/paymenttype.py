@@ -1,5 +1,6 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel
+from django.core.validators import MinValueValidator
 from safedelete.models import SOFT_DELETE
 
 class PaymentType(SafeDeleteModel):

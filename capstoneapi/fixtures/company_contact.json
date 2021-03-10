@@ -1,0 +1,42 @@
+[
+    {
+        "model": "capstoneapi.companycontact",
+        "pk": 1,
+        "fields": {
+            "company_name": "Budweiser",
+            "contact_name": "Jerry Reid",
+            "contact_phone_number": "615-123-4567",
+            "contact_email": "jerry@jerryreid.com"
+    }
+},
+    {
+        "model": "capstoneapi.companycontact",
+        "pk": 2,
+        "fields": {
+            "company_name": "Purity",
+            "contact_name": "Doug Dimmadome",
+            "contact_phone_number": "615-765-4321",
+            "contact_email": "doug@dimmadome.com"
+    }
+},   
+{
+    "model": "capstoneapi.companycontact",
+    "pk": 3,
+    "fields": {
+        "company_name": "Averitt",
+        "contact_name": "Hideo Kojima",
+        "contact_phone_number": "615-989-4769",
+        "contact_email": "hideo@kojima.com"
+}
+},  
+{
+    "model": "capstoneapi.companycontact",
+    "pk": 4,
+    "fields": {
+        "company_name": "imi",
+        "contact_name": "Trent Carter",
+        "contact_phone_number": "615-876-3809",
+        "contact_email": "trent@carter.com"
+}
+}
+]

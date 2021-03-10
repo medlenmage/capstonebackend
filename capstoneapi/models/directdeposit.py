@@ -1,8 +1,9 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel
 from safedelete.models import SOFT_DELETE
+from django.core.validators import MinValueValidator
 
-class PaymentType(SafeDeleteModel):
+class DirectDeposit(SafeDeleteModel):
 
     _safedelete_policy = SOFT_DELETE
     account_number = models.IntegerField(validators=[MinValueValidator(0)],)

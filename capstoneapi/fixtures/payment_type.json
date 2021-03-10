@@ -1,0 +1,22 @@
+[
+    {
+        "model": "capstoneapi.paymenttype",
+        "pk": 1,
+        "fields": {
+            "account_number": 123456,
+            "routing_number": 654321,
+            "bank_name": "Regions",
+            "payment_name": "Jane's Bank"
+    }
+},
+    {
+        "model": "capstoneapi.paymenttype",
+        "pk": 2,
+        "fields": {
+            "account_number": 654321,
+            "routing_number": 123456,
+            "bank_name": "Bank of America",
+            "payment_name": "Linda's Bank"
+        }
+    }   
+]
