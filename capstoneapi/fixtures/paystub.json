@@ -6,7 +6,7 @@
             "employee_id": 1,
             "salary": 2000,
             "pay_period": "2020-02-14",
-            "deposit_date": "20202-02-28",
+            "deposit_date": "2020-02-28",
             "deposit_account": 1
         }
     },
@@ -17,7 +17,7 @@
             "employee_id": 1,
             "salary": 2200,
             "pay_period": "2020-03-01",
-            "deposit_date": "20202-03-16",
+            "deposit_date": "2020-03-16",
             "deposit_account": 1
         }
     },
@@ -28,7 +28,7 @@
             "employee_id": 2,
             "salary": 1700,
             "pay_period": "2020-02-14",
-            "deposit_date": "20202-02-28",
+            "deposit_date": "2020-02-28",
             "deposit_account": 2
         }
     },
@@ -39,7 +39,7 @@
             "employee_id": 1,
             "salary": 1800,
             "pay_period": "2020-03-01",
-            "deposit_date": "20202-03-16",
+            "deposit_date": "2020-03-16",
             "deposit_account": 2
         }
     }
