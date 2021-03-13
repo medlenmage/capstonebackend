@@ -1,0 +1,24 @@
+[
+    {
+        "model": "capstoneapi.benefits",
+        "pk": 1,
+        "fields": {
+            "health_ins": "BCBS of TN",
+            "dental_ins": "BCBS of TN",
+            "life_ins": "Prudential",
+            "vacation_days": 14,
+            "sick_days": 7
+        }
+    },
+    {
+        "model": "capstoneapi.benefits",
+        "pk": 2,
+        "fields": {
+            "health_ins": "Cigna",
+            "dental_ins": "BCBS of TN",
+            "life_ins": "Prudential",
+            "vacation_days": 14,
+            "sick_days": 7
+        }
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "model": "capstoneapi.paystub",
+        "pk": 1,
+        "fields": {
+            "employee_id": 1,
+            "salary": 2000,
+            "pay_period": "2020-02-14",
+            "deposit_date": "2020-02-28",
+            "deposit_account": 1
+        }
+    },
+    {
+        "model": "capstoneapi.paystub",
+        "pk": 1,
+        "fields": {
+            "employee_id": 1,
+            "salary": 2200,
+            "pay_period": "2020-03-01",
+            "deposit_date": "2020-03-16",
+            "deposit_account": 1
+        }
+    },
+    {
+        "model": "capstoneapi.paystub",
+        "pk": 1,
+        "fields": {
+            "employee_id": 2,
+            "salary": 1700,
+            "pay_period": "2020-02-14",
+            "deposit_date": "2020-02-28",
+            "deposit_account": 2
+        }
+    },
+    {
+        "model": "capstoneapi.paystub",
+        "pk": 1,
+        "fields": {
+            "employee_id": 1,
+            "salary": 1800,
+            "pay_period": "2020-03-01",
+            "deposit_date": "2020-03-16",
+            "deposit_account": 2
+        }
+    }
+]

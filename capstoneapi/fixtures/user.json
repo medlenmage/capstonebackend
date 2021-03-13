@@ -1,0 +1,74 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "cackle",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "joshua@joshuamedlen.com",
+        "first_name": "Joshua",
+        "last_name": "Medlen",
+        "email": "joshua@joshuamedlen.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-10-10T19:12:13.676Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "dough",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "john@johndoe.com",
+        "first_name": "Joe",
+        "last_name": "Doe",
+        "email": "john@johndoe.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-10-10T22:47:43.564Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "butter",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jane@janedoe.com",
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "email": "jane@janedoe.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-10-10T22:48:19.899Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "soda",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "linda@lindahand.com",
+        "first_name": "Linda",
+        "last_name": "Hand",
+        "email": "linda@lindahand.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-10-10T22:48:53.984Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "model": "capstoneapi.curriculum",
+        "pk": 1,
+        "fields": {
+            "permit_lessons": "Learning the laws in regards to class A cdl drivers and gaining basic understanding of the truck. Permit test issued at the end.",
+            "driving_course": "Student will learn to drive a big rig truck and become familiar with handling of the truck",
+            "backing_course": "Student will practice backing the truck up to docking bays and in various situations",
+            "pretrip_test": "Student will learn to do a pre-trip inspection on the outside and inside of the truck. The license test will be taken after the end of the course."
+    }
+}
+]

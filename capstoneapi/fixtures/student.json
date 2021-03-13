@@ -1,0 +1,22 @@
+[
+    {
+        "model": "capstoneapi.student",
+        "pk": 1,
+        "fields": {
+            "user": 3,
+            "balance": 3500,
+            "payment_type": 1,
+            "application_status": true
+        }
+    },
+    {
+        "model": "capstoneapi.student",
+        "pk": 2,
+        "fields": {
+            "user": 4,
+            "balance": 4800,
+            "payment_type": 2,
+            "application_status": false
+        }
+    }   
+]

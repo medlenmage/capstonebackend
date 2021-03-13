@@ -1,0 +1,18 @@
+[
+    {
+        "model": "capstoneapi.grouping",
+        "pk": 1,
+        "fields": {
+            "student_id": 1,
+            "instructor": 1
+        }
+    },
+    {
+        "model": "capstoneapi.grouping",
+        "pk": 2,
+        "fields": {
+            "student_id": 2,
+            "instructor": 2
+        }
+    }
+]

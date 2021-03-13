@@ -4,7 +4,7 @@ from django.core.validators import MinValueValidator
 from django.contrib.auth.models import User
 from .paymenttype import PaymentType
 
-class Student(models.model):
+class Student(models.Model):
     
     user = models.OneToOneField(User, on_delete=models.DO_NOTHING,)
     balance = models.IntegerField(validators=[MinValueValidator(0)],)

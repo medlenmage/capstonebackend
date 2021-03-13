@@ -1,0 +1,12 @@
+[
+    {
+        "model": "capstoneapi.school",
+        "pk": 1,
+        "fields": {
+            "employee_id": [1, 2],
+            "grouping_id": [1, 2],
+            "equipment_id": [1, 2],
+            "curriculum_id": 1
+    }
+}
+]

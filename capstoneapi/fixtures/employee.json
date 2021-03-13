@@ -1,0 +1,22 @@
+[
+    {
+        "model": "capstoneapi.employee",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "benefits_id": 1,
+            "deposit_account": 1,
+            "is_admin": true
+        }
+    },
+    {
+        "model": "capstoneapi.employee",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "benefits_id": 2,
+            "deposit_account": 2,
+            "is_admin": false
+        }
+    }   
+]

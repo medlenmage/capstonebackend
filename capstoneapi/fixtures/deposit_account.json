@@ -1,0 +1,22 @@
+[
+    {
+        "model": "capstoneapi.directdeposit",
+        "pk": 1,
+        "fields": {
+            "account_number": 123456,
+            "routing_number": 654321,
+            "bank_name": "Regions",
+            "account_name": "Josh's Bank"
+    }
+},
+    {
+        "model": "capstoneapi.directdeposit",
+        "pk": 2,
+        "fields": {
+            "account_number": 654321,
+            "routing_number": 123456,
+            "bank_name": "Bank of America",
+            "account_name": "John's Bank"
+        }
+    }   
+]
