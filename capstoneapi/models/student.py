@@ -7,6 +7,6 @@ from .paymenttype import PaymentType
 class Student(models.Model):
     
     user = models.OneToOneField(User, on_delete=models.DO_NOTHING,)
-    balance = models.IntegerField(validators=[MinValueValidator(0)],)
-    payment_type = models.ForeignKey(PaymentType, on_delete=models.DO_NOTHING)
+    balance = models.IntegerField(validators=[MinValueValidator(0)], default=4800)
+    payment_type = models.ForeignKey(PaymentType, on_delete=models.DO_NOTHING, blank=True, null=True)
     application_status = models.BooleanField(default=False)

@@ -8,7 +8,7 @@ from .directdeposit import DirectDeposit
 class Employee(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.DO_NOTHING,)
-    benefits_id = models.ForeignKey(Benefits, on_delete=models.DO_NOTHING,)
-    deposit_account = models.ForeignKey(DirectDeposit, on_delete=models.DO_NOTHING)
+    benefits_id = models.ForeignKey(Benefits, on_delete=models.DO_NOTHING, blank=True, null=True)
+    deposit_account = models.ForeignKey(DirectDeposit, on_delete=models.DO_NOTHING, blank=True, null=True)
     is_admin = models.BooleanField(default=False)
     
