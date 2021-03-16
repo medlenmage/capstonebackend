@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-from capstoneapi.models import Employee, Student, student
+from capstoneapi.models import Employee, Student, Benefits, DirectDeposit
 
 
 @csrf_exempt
@@ -58,11 +58,10 @@ def register_student(request):
         email=req_body['email'],
         password=req_body['password'],
         first_name=req_body['first_name'],
-        last_name=req_body['last_name']
+        last_name=req_body['last_name'],
     )
 
     student = Student.objects.create(
-        # need to set is_staff to false
         user=new_user
     )
 
@@ -93,11 +92,13 @@ def register_employee(request):
         email=req_body['email'],
         password=req_body['password'],
         first_name=req_body['first_name'],
-        last_name=req_body['last_name']
+        last_name=req_body['last_name'],
+        is_staff=True
     )
 
     employee = Employee.objects.create(
-        # need to set is_staff to true
+        # benefits_id=Benefits.objects.get(health_ins = 'BCBS of TN', dental_ins = 'BCBS of TN', life_ins = 'Prudential', vacation_days = 14, sick_days = 7),
+        # deposit_account=DirectDeposit.objects.get(account_number = 123456, routing_number = 654321, bank_name = 'Regions', account_name = "Josh\'s Bank"),
         user=new_user
     )
 

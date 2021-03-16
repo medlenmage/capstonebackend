@@ -9,3 +9,4 @@ from .paymenttype import PaymentType
 from .paystub import Paystub
 from .school import School
 from .student import Student
+from .directdeposit import DirectDeposit
