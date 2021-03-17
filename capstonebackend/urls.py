@@ -11,7 +11,8 @@ from capstoneapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', Users, 'user')
-
+router.register(r'employees', Employees, 'employee')
+router.register(r'directdeposits', DirectDeposits, 'directdeposits')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
