@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from capstoneapi.models import Employee, DirectDeposit, Benefits
+from capstoneapi.models import Employee, DirectDeposit, Benefits, directdeposit, benefits
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for Employee"""

@@ -18,7 +18,7 @@ class DirectDepositSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class DirectDeposits(ViewSet):
-    permission_classes = (IsAuthenticatedOrReadOnly,)
+    # permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def create(self, request):
         """Handle POST operations

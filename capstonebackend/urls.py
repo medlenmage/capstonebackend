@@ -13,6 +13,8 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', Users, 'user')
 router.register(r'employees', Employees, 'employee')
 router.register(r'directdeposits', DirectDeposits, 'directdeposits')
+router.register(r'benefits', Benefit, 'benefits')
+router.register(r'paystubs', Paystubs, 'paystubs')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
