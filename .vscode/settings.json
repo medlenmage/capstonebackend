@@ -3,5 +3,13 @@
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--django-settings-module=capstoneapi.settings",
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "db.sqlite3",
+            "name": "cdl school"
+        }
     ]
 }

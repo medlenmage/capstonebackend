@@ -11,6 +11,12 @@ from capstoneapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', Users, 'user')
+router.register(r'employees', Employees, 'employees')
+router.register(r'directdeposits', DirectDeposits, 'directdeposits')
+router.register(r'benefits', Benefit, 'benefits')
+router.register(r'paystubs', Paystubs, 'paystubs')
+router.register(r'equipments', Equipments, 'equipments')
+router.register(r'companycontacts', CompanyContacts, 'companycontacts')
 
 
 urlpatterns = [
