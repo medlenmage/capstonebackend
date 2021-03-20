@@ -6,6 +6,7 @@
             "account_number": 123456,
             "routing_number": 654321,
             "bank_name": "Regions",
+            "employee": 1,
             "account_name": "Josh's Bank"
     }
 },
@@ -16,6 +17,7 @@
             "account_number": 654321,
             "routing_number": 123456,
             "bank_name": "Bank of America",
+            "employee": 2,
             "account_name": "John's Bank"
         }
     }   

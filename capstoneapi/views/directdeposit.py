@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from capstoneapi.models import DirectDeposit, directdeposit
+from capstoneapi.models import DirectDeposit, directdeposit, employee
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 class DirectDepositSerializer(serializers.HyperlinkedModelSerializer):
@@ -14,7 +14,7 @@ class DirectDepositSerializer(serializers.HyperlinkedModelSerializer):
             view_name='directdeposit',
             lookup_field='id'
         )
-        fields = ('id', 'account_number', 'routing_number', 'bank_name', 'account_name')
+        fields = ('id', 'account_number', 'routing_number', 'bank_name', 'employee','account_name')
 
 
 class DirectDeposits(ViewSet):
@@ -29,6 +29,7 @@ class DirectDeposits(ViewSet):
         new_direct_deposit.account_number = request.data["account_number"]
         new_direct_deposit.routing_number = request.data["routing_number"]
         new_direct_deposit.bank_name = request.data["bank_name"]
+        new_direct_deposit = employee
         new_direct_deposit.account_name = request.data["account_name"]
         new_direct_deposit.save()
 

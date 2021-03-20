@@ -17,7 +17,7 @@ class EquipmentSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('id', 'equipment_type', 'is_available')
 
 
-class Equipment(ViewSet):
+class Equipments(ViewSet):
     # permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def create(self, request):
@@ -46,7 +46,7 @@ class Equipment(ViewSet):
         @apiSuccessExample {json} Success
             HTTP/1.1 204 No Content
         """
-        equipment = Equipment.objects.get()
+        equipment = Equipment.objects.get(pk=pk)
         equipment.equipment_type = request.data["equipment_type"]
         equipment.is_available = request.data["is_available"]
         equipment.save()

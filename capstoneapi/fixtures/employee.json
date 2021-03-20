@@ -5,7 +5,6 @@
         "fields": {
             "user": 1,
             "benefits_id": 1,
-            "deposit_account": 1,
             "is_admin": true
         }
     },
@@ -15,7 +14,6 @@
         "fields": {
             "user": 2,
             "benefits_id": 2,
-            "deposit_account": 2,
             "is_admin": false
         }
     }   

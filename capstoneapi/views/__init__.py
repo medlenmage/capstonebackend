@@ -5,3 +5,5 @@ from .directdeposit import DirectDeposits
 from .employee import Employees
 from .benefits import Benefit
 from .paystub import Paystubs
+from .equipment import Equipments
+from .companycontact import CompanyContacts

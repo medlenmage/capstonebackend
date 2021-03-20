@@ -47,7 +47,7 @@ class CompanyContacts(ViewSet):
         @apiSuccessExample {json} Success
             HTTP/1.1 204 No Content
         """
-        company_contact = CompanyContact.objects.get()
+        company_contact = CompanyContact.objects.get(pk=pk)
         company_contact.company_name = request.data["company_name"]
         company_contact.contact_name = request.data["contact_name"]
         company_contact.contact_phone_number = request.data["contact_phone_number"]

@@ -12,7 +12,7 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
         url = serializers.HyperlinkedIdentityField(
             view_name='employee', lookup_field='id'
         )
-        fields = ('id', 'user', 'benefits_id', 'deposit_account')
+        fields = ('id', 'user', 'benefits_id')
         depth = 1
 
 class Employees(ViewSet):
@@ -30,9 +30,7 @@ class Employees(ViewSet):
             HTTP/1.1 204 No Content
         """
         employee = Employee.objects.get(user=request.auth.user)
-        direct_deposit = DirectDeposit.objects.get(pk=pk)
         benefits = Benefits.objects.get(pk=pk)
-        employee.deposit_account = direct_deposit
         employee.benefits_id = benefits
         employee.user.save()
         employee.save()
