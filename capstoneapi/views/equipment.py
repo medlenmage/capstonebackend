@@ -46,7 +46,7 @@ class Equipment(ViewSet):
         @apiSuccessExample {json} Success
             HTTP/1.1 204 No Content
         """
-        equipment = Equipment.objects.get(user=request.auth.user)
+        equipment = Equipment.objects.get()
         equipment.equipment_type = request.data["equipment_type"]
         equipment.is_available = request.data["is_available"]
         equipment.save()
