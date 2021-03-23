@@ -11,8 +11,8 @@ from capstoneapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', Users, 'user')
-router.register(r'employees', Employees, 'employees')
-router.register(r'directdeposits', DirectDeposits, 'directdeposits')
+router.register(r'employee', Employees, 'employee')
+router.register(r'directdeposit', DirectDeposits, 'directdeposit')
 router.register(r'benefits', Benefit, 'benefits')
 router.register(r'paystubs', Paystubs, 'paystubs')
 router.register(r'equipments', Equipments, 'equipments')

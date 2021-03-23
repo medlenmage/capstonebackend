@@ -53,7 +53,7 @@ class Paystubs(ViewSet):
         employee_id = self.request.query_params.get('employee_id', None)
 
         if employee_id is not None:
-            paystub = paystub.filter(employee__contains=employee_id)
+            paystub = paystub.filter(employee_id__pk=employee_id)
 
         serializer = PaystubSerializer(
             paystub, many=True, context={'request': request})
