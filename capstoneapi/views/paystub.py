@@ -49,6 +49,12 @@ class Paystubs(ViewSet):
     def list(self, request):
         """Handle GET requests to paystub resource"""
         paystub = Paystub.objects.all()
+
+        employee_id = self.request.query_params.get('employee_id', None)
+
+        if employee_id is not None:
+            paystub = paystub.filter(employee_id__pk=employee_id)
+
         serializer = PaystubSerializer(
             paystub, many=True, context={'request': request})
         return Response(serializer.data)
