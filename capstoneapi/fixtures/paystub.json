@@ -12,7 +12,7 @@
     },
     {
         "model": "capstoneapi.paystub",
-        "pk": 1,
+        "pk": 2,
         "fields": {
             "employee_id": 1,
             "salary": 2200,
@@ -23,7 +23,7 @@
     },
     {
         "model": "capstoneapi.paystub",
-        "pk": 1,
+        "pk": 3,
         "fields": {
             "employee_id": 2,
             "salary": 1700,
@@ -34,7 +34,7 @@
     },
     {
         "model": "capstoneapi.paystub",
-        "pk": 1,
+        "pk": 4,
         "fields": {
             "employee_id": 1,
             "salary": 1800,
