@@ -1,6 +1,7 @@
 from .register import register_student
 from .register import register_employee
 from .register import login_user
+from .register import get_current_user
 from .directdeposit import DirectDeposits
 from .employee import Employees
 from .benefits import Benefit

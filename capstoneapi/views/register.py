@@ -111,3 +111,17 @@ def register_employee(request):
     # Return the token to the client
     data = json.dumps({"token": token.key, "id": new_user.id})
     return HttpResponse(data, content_type='application/json', status=status.HTTP_201_CREATED)
+
+@csrf_exempt
+def get_current_user(request):
+
+    req_body = json.loads(request.body.decode())
+
+    try:
+        user_id = Token.objects.get(key=req_body['token']).user_id
+        data = json.dumps({"user_id": user_id})
+        return HttpResponse(data, content_type="application/json")
+    except Token.DoesNotExist:
+        data = json.dumps(
+            {"valid": False, "msg": "No currently authenticated user."})
+        return HttpResponse(data, content_type='application/json')

@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from capstoneapi.models import Employee, DirectDeposit, Benefits, directdeposit, benefits
+from capstoneapi.models import Employee, DirectDeposit, Benefits, directdeposit, benefits, employee
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for Employee"""
@@ -37,10 +37,30 @@ class Employees(ViewSet):
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single customer
+        Purpose: Allow a user to communicate with the Arsenal database to retrieve  one user
+        Methods:  GET
+        Returns:
+            Response -- JSON serialized employee or student instance
+        """
+        try:
+            employee = Employee.objects.get(pk=pk)
+            serializer = EmployeeSerializer(employee, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
+
 
     def list(self, request):
         """Handle GET requests to employee resource"""
         employees = Employee.objects.all()
+
+        user = self.request.query_params.get('user', None)
+
+        if user is not None:
+            employees = employees.filter(user__pk=user)
+
         serializer = EmployeeSerializer(
             employees, many=True, context={'request': request})
         return Response(serializer.data)
