@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^registerstudent$', register_student),
     url(r'^registeremployee$', register_employee),
     url(r'^login$', login_user),
+    path('get_current_user', get_current_user),
     url(r'^api-token-auth$', obtain_auth_token),
     url(r'^api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ]
