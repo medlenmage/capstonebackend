@@ -15,6 +15,7 @@ class PaystubSerializer(serializers.HyperlinkedModelSerializer):
             lookup_field='id'
         )
         fields = ('id', 'employee_id', 'salary', 'pay_period', 'deposit_date', 'deposit_account')
+        depth = 2
 
 
 class Paystubs(ViewSet):
