@@ -56,6 +56,15 @@ class CompanyContacts(ViewSet):
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single deposit accounts"""
+        try:
+            company_contact = CompanyContact.objects.get(pk=pk)
+            serializer = CompanyContactSerializer(company_contact, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
+
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a company contact
         Returns:

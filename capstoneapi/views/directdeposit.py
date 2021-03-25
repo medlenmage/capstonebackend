@@ -29,7 +29,7 @@ class DirectDeposits(ViewSet):
         new_direct_deposit.account_number = request.data["account_number"]
         new_direct_deposit.routing_number = request.data["routing_number"]
         new_direct_deposit.bank_name = request.data["bank_name"]
-        new_direct_deposit = employee
+        new_direct_deposit.employee = employee
         new_direct_deposit.account_name = request.data["account_name"]
         new_direct_deposit.save()
 
