@@ -3,8 +3,8 @@
         "model": "capstoneapi.benefits",
         "pk": 1,
         "fields": {
-            "health_ins": "BCBS of TN",
-            "dental_ins": "BCBS of TN",
+            "health_ins": "Blue Cross Blue Shield of Tennessee",
+            "dental_ins": "Blue Cross Blue Shield of Tennessee",
             "life_ins": "Prudential",
             "vacation_days": 14,
             "sick_days": 7
@@ -15,7 +15,7 @@
         "pk": 2,
         "fields": {
             "health_ins": "Cigna",
-            "dental_ins": "BCBS of TN",
+            "dental_ins": "Blue Cross Blue Shield of Tennessee",
             "life_ins": "Prudential",
             "vacation_days": 14,
             "sick_days": 7
