@@ -8,3 +8,5 @@ from .benefits import Benefit
 from .paystub import Paystubs
 from .equipment import Equipments
 from .companycontact import CompanyContacts
+from .student import Students
+from .payment_type import PaymentTypes

@@ -17,6 +17,9 @@ router.register(r'benefits', Benefit, 'benefits')
 router.register(r'paystubs', Paystubs, 'paystubs')
 router.register(r'equipments', Equipments, 'equipments')
 router.register(r'companycontacts', CompanyContacts, 'companycontacts')
+router.register(r'students', Students, 'students')
+router.register(r'paymenttype', PaymentTypes, 'paymenttype')
+
 
 
 urlpatterns = [
