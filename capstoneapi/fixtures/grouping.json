@@ -4,7 +4,9 @@
         "pk": 1,
         "fields": {
             "student_id": 1,
-            "instructor": 1
+            "instructor": 1,
+            "start_date": "2021-01-01",
+            "end_date": "2021-02-01"
         }
     },
     {
@@ -12,7 +14,9 @@
         "pk": 2,
         "fields": {
             "student_id": 2,
-            "instructor": 2
+            "instructor": 2,
+            "start_date": "2021-02-01",
+            "end_date": "2021-03-01"
         }
     }
 ]

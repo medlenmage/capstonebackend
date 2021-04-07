@@ -6,7 +6,7 @@ from .student import Student
 
 class Grouping(models.Model):
 
-    student = models.ForeignKey(Student, on_delete=models.DO_NOTHING, related_name="groupings")
+    student = models.ForeignKey(Student, on_delete=models.DO_NOTHING)
     instructor = models.ForeignKey(Employee, on_delete=models.DO_NOTHING)
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()

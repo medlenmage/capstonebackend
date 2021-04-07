@@ -10,3 +10,4 @@ from .equipment import Equipments
 from .companycontact import CompanyContacts
 from .student import Students
 from .payment_type import PaymentTypes
+from .grouping import Groupings

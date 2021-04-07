@@ -5,27 +5,17 @@ from rest_framework import serializers
 from rest_framework import status
 from capstoneapi.models import Student, Employee, Grouping, grouping
 from .employee import EmployeeSerializer
-
-
-class StudentSerializer(serializers.HyperlinkedModelSerializer):
-    """JSON serializer for employee direct deposits"""
-    class Meta:
-        model = Student
-        url = serializers.HyperlinkedIdentityField(
-            view_name='student',
-            lookup_field='id'
-        )
-        fields = ('user')
+from .student import StudentSerializer
 
 class GroupingSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for employee direct deposits"""
     class Meta:
         model = Grouping
         url = serializers.HyperlinkedIdentityField(
-            view_name='grouping',
+            view_name='groupings',
             lookup_field='id'
         )
-        fields = ('student', 'employee', 'start_date', 'end_date')
+        fields = ('id', 'student', 'instructor', 'start_date', 'end_date')
 
 
 class Groupings(ViewSet):
