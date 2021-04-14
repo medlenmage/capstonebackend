@@ -16,6 +16,8 @@ class GroupingSerializer(serializers.HyperlinkedModelSerializer):
             lookup_field='id'
         )
         fields = ('id', 'student', 'instructor', 'start_date', 'end_date')
+        depth = 2
+
 
 
 class Groupings(ViewSet):
