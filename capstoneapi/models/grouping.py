@@ -8,5 +8,5 @@ class Grouping(models.Model):
 
     student = models.ForeignKey(Student, on_delete=models.DO_NOTHING)
     instructor = models.ForeignKey(Employee, on_delete=models.DO_NOTHING)
-    start_date = models.DateTimeField()
-    end_date = models.DateTimeField()
+    start_date = models.DateField()
+    end_date = models.DateField()
