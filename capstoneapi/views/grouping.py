@@ -16,7 +16,7 @@ class GroupingSerializer(serializers.HyperlinkedModelSerializer):
             lookup_field='id'
         )
         fields = ('id', 'student', 'instructor', 'start_date', 'end_date')
-        depth = 2
+        depth = 3
 
 
 
@@ -69,6 +69,12 @@ class Groupings(ViewSet):
     def list(self, request):
         """Handle GET requests to direct deposit resource"""
         grouping = Grouping.objects.all()
+
+        instructor = self.request.query_params.get('instructor', None)
+
+        if instructor is not None:
+            grouping = grouping.filter(instructor__pk=instructor)
+            
         serializer = GroupingSerializer(
             grouping, many=True, context={'request': request})
         return Response(serializer.data)
